@@ -1,0 +1,8 @@
+{
+  "require": {
+    "hprose/hprose": ">=2.0.0",
+    "illuminate/database": "*"
+  },
+  "require-dev": {
+  }
+}
