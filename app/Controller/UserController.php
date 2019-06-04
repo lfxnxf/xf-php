@@ -12,7 +12,7 @@ use App\Service\UserService;
 
 class UserController
 {
-    public function login()
+    public function login($request = '')
     {
         $service = new UserService();
         return $service->login();

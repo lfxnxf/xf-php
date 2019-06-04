@@ -6,8 +6,8 @@
  * Time: 16:23
  */
 
-require_once 'loader.php';
-use Illuminate\Database\Capsule\Manager as Capsule;
+//require_once 'loader.php';
+use Illuminate\Database\Capsule\Manager;
 
 class Framework
 {
@@ -15,15 +15,13 @@ class Framework
     public static function run($routeUrl, $param)
     {
         // 数据库配置
-        $capsule = new Capsule;
+        $capsule = new Manager();
         $capsule->addConnection(require BASE_URL . '/config/database.php');
         $capsule->bootEloquent();
-        // 注册自动加载
-        spl_autoload_register('Loader::autoload');
         return self::execute($routeUrl, $param);
     }
 
-    public static function execute($routeUrl)
+    public static function execute($routeUrl, $param)
     {
         $url = explode('/', $routeUrl);
         if (count($url) == 1){
@@ -37,6 +35,6 @@ class Framework
             $controller = 'App\\Controller\\' . implode('\\', $url) . 'Controller';
         }
         $controllerObj = new $controller();
-        return $controllerObj->$action();
+        return $controllerObj->$action($param);
     }
 }

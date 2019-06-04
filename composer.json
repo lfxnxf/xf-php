@@ -4,5 +4,12 @@
     "illuminate/database": "*"
   },
   "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Inc\\": "inc/",
+      "Config\\": "config/"
+    }
   }
 }

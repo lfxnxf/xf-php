@@ -6,8 +6,8 @@
  * Time: 11:53
  */
 
-require __DIR__.'/vendor/autoload.php';
-require_once __DIR__.'/framework/Framework.php';
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/framework/Framework.php';
 
 define('BASE_URL', __DIR__);
 use Hprose\Http\Server;
@@ -21,6 +21,7 @@ class Index
         return Framework::run($routeUrl, $param);
     }
 }
+
 $server = new Server();
 $server->setDebugEnabled(TRUE);
 $server->setCrossDomainEnabled();

@@ -12,6 +12,7 @@ class Loader
     /**
      * 自动加载器
      * @param $class
+     * @throws Exception
      */
     public static function autoload($class)
     {

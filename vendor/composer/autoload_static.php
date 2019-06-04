@@ -21,6 +21,7 @@ class ComposerStaticIniteafaaab13dccaf5d0e769f2ab54d67a8
         ),
         'I' => 
         array (
+            'Inc\\' => 4,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Database\\' => 20,
             'Illuminate\\Contracts\\' => 21,
@@ -29,6 +30,14 @@ class ComposerStaticIniteafaaab13dccaf5d0e769f2ab54d67a8
         'H' => 
         array (
             'Hprose\\' => 7,
+        ),
+        'C' => 
+        array (
+            'Config\\' => 7,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -40,6 +49,10 @@ class ComposerStaticIniteafaaab13dccaf5d0e769f2ab54d67a8
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Inc\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/inc',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -60,6 +73,14 @@ class ComposerStaticIniteafaaab13dccaf5d0e769f2ab54d67a8
         'Hprose\\' => 
         array (
             0 => __DIR__ . '/..' . '/hprose/hprose/src/Hprose',
+        ),
+        'Config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 

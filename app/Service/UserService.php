@@ -8,12 +8,19 @@
 
 namespace App\Service;
 
+use App\Model\UserModel;
+
 class UserService
 {
+    private $userModel = null;
+    public function __construct()
+    {
+        $this->userModel = new UserModel();
+    }
+
     public function login()
     {
-        return [
-            'id' => 1
-        ];
+        $user = $this->userModel->find(1)->toArray();
+        return $user;
     }
 }
