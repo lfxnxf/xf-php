@@ -6,8 +6,7 @@
  * Time: 16:23
  */
 
-//require_once 'loader.php';
-use Illuminate\Database\Capsule\Manager;
+require_once 'Db.php';
 
 class Framework
 {
@@ -15,9 +14,8 @@ class Framework
     public static function run($routeUrl, $param)
     {
         // 数据库配置
-        $capsule = new Manager();
-        $capsule->addConnection(require BASE_URL . '/config/database.php');
-        $capsule->bootEloquent();
+        Db::getInstance()->addConnection(require BASE_URL . '/config/database.php');
+        Db::getInstance()->bootEloquent();
         return self::execute($routeUrl, $param);
     }
 

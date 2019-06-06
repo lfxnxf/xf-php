@@ -10,6 +10,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/framework/Framework.php';
 
 define('BASE_URL', __DIR__);
+define('CONFIG_URL',__DIR__ . '/config');
 use Hprose\Http\Server;
 
 //todo 调用各种配置文件

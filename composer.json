@@ -10,6 +10,9 @@
       "App\\": "app/",
       "Inc\\": "inc/",
       "Config\\": "config/"
-    }
+    },
+    "files" : [
+      "app/Helpers/functions.php"
+    ]
   }
 }
