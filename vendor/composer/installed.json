@@ -70,17 +70,17 @@
     },
     {
         "name": "hprose/hprose",
-        "version": "v2.0.38",
-        "version_normalized": "2.0.38.0",
+        "version": "v2.0.39",
+        "version_normalized": "2.0.39.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/hprose/hprose-php.git",
-            "reference": "acc2cab4a3c231d8d303baec7d4ec187d24b646f"
+            "url": "https://github.com/hprose/hprose-php5.git",
+            "reference": "cda46f873c78585ad77bf4be733edd6e2a9a6573"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/hprose/hprose-php/zipball/acc2cab4a3c231d8d303baec7d4ec187d24b646f",
-            "reference": "acc2cab4a3c231d8d303baec7d4ec187d24b646f",
+            "url": "https://api.github.com/repos/hprose/hprose-php5/zipball/cda46f873c78585ad77bf4be733edd6e2a9a6573",
+            "reference": "cda46f873c78585ad77bf4be733edd6e2a9a6573",
             "shasum": ""
         },
         "require": {
@@ -92,6 +92,7 @@
         "suggest": {
             "ext-hprose": "Faster serialize and unserialize hprose extension."
         },
+        "time": "2019-06-07T09:30:44+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -102,7 +103,52 @@
                 "Hprose\\": "src/Hprose"
             }
         },
-        "notification-url": "https://packagist.org/downloads/"
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ma Bingyao",
+                "email": "andot@hprose.com",
+                "homepage": "http://hprose.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "It is a modern, lightweight, cross-language, cross-platform, object-oriented, high performance, remote dynamic communication middleware. It is not only easy to use, but powerful. You just need a little time to learn, then you can use it to easily construct cross language cross platform distributed application system.",
+        "homepage": "http://hprose.com/",
+        "keywords": [
+            "HTML5",
+            "Hprose",
+            "Socket",
+            "ajax",
+            "async",
+            "communication",
+            "cross-domain",
+            "cross-language",
+            "cross-platform",
+            "framework",
+            "future",
+            "game",
+            "http",
+            "json",
+            "jsonrpc",
+            "library",
+            "middleware",
+            "phprpc",
+            "protocol",
+            "rpc",
+            "serialization",
+            "serialize",
+            "service",
+            "tcp",
+            "unix",
+            "web",
+            "webapi",
+            "webservice",
+            "websocket",
+            "xmlrpc"
+        ]
     },
     {
         "name": "illuminate/container",
@@ -316,17 +362,17 @@
     },
     {
         "name": "kylekatarnls/update-helper",
-        "version": "1.1.0",
-        "version_normalized": "1.1.0.0",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/kylekatarnls/update-helper.git",
-            "reference": "fbfa94c0f196d4718ce3c1032e9c4b34140e69d3"
+            "reference": "b34a46d7f5ec1795b4a15ac9d46b884377262df9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kylekatarnls/update-helper/zipball/fbfa94c0f196d4718ce3c1032e9c4b34140e69d3",
-            "reference": "fbfa94c0f196d4718ce3c1032e9c4b34140e69d3",
+            "url": "https://api.github.com/repos/kylekatarnls/update-helper/zipball/b34a46d7f5ec1795b4a15ac9d46b884377262df9",
+            "reference": "b34a46d7f5ec1795b4a15ac9d46b884377262df9",
             "shasum": ""
         },
         "require": {
@@ -338,7 +384,7 @@
             "composer/composer": "^2.0.x-dev",
             "phpunit/phpunit": ">=4.8.35 <6.0"
         },
-        "time": "2019-05-30T21:26:08+00:00",
+        "time": "2019-06-05T08:34:23+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "UpdateHelper\\ComposerPlugin"
@@ -473,6 +519,78 @@
             "polyfill",
             "pseudorandom",
             "random"
+        ]
+    },
+    {
+        "name": "php-amqplib/php-amqplib",
+        "version": "v2.8.0",
+        "version_normalized": "2.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-amqplib/php-amqplib.git",
+            "reference": "7df8553bd8b347cf6e919dd4a21e75f371547aa0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/7df8553bd8b347cf6e919dd4a21e75f371547aa0",
+            "reference": "7df8553bd8b347cf6e919dd4a21e75f371547aa0",
+            "shasum": ""
+        },
+        "require": {
+            "ext-bcmath": "*",
+            "php": ">=5.4.0"
+        },
+        "replace": {
+            "videlalvaro/php-amqplib": "self.version"
+        },
+        "require-dev": {
+            "phpdocumentor/phpdocumentor": "^2.9",
+            "phpunit/phpunit": "^4.8",
+            "scrutinizer/ocular": "^1.1",
+            "squizlabs/php_codesniffer": "^2.5"
+        },
+        "suggest": {
+            "ext-sockets": "Use AMQPSocketConnection"
+        },
+        "time": "2018-10-23T18:48:24+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PhpAmqpLib\\": "PhpAmqpLib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Alvaro Videla",
+                "role": "Original Maintainer"
+            },
+            {
+                "name": "John Kelly",
+                "email": "johnmkelly86@gmail.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Raúl Araya",
+                "email": "nubeiro@gmail.com",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+        "homepage": "https://github.com/php-amqplib/php-amqplib/",
+        "keywords": [
+            "message",
+            "queue",
+            "rabbitmq"
         ]
     },
     {

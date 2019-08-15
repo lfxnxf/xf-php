@@ -20,6 +20,10 @@ class ComposerStaticIniteafaaab13dccaf5d0e769f2ab54d67a8
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
         ),
+        'P' => 
+        array (
+            'PhpAmqpLib\\' => 11,
+        ),
         'I' => 
         array (
             'Inc\\' => 4,
@@ -50,6 +54,10 @@ class ComposerStaticIniteafaaab13dccaf5d0e769f2ab54d67a8
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'PhpAmqpLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
         ),
         'Inc\\' => 
         array (

@@ -1,7 +1,8 @@
 {
   "require": {
     "hprose/hprose": ">=2.0.0",
-    "illuminate/database": "*"
+    "illuminate/database": "*",
+    "php-amqplib/php-amqplib": ">=2.6.1"
   },
   "require-dev": {
   },
